@@ -41,21 +41,27 @@
         gap: 10px;
         flex-wrap: wrap;
       }
-
-      .menu {
-        background-color: white;
-        border: 2px solid #333;
-        border-radius: 25px;
-        height: 40px;
-        width: 120px;
-        color: #333;
-        font-weight: bold;
-        cursor: pointer;
-        transition: 0.2s;
+      a.nav-button,
+      button.nav-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 25px;
+      height: 40px;
+      width: 160px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
       }
-      .menu:hover {
-        background-color: #333;
-        color: white;
+      a.nav-button {
+      background-color: white;
+      border: 2px solid #333;
+      color: #333;
+      }
+      a.nav-button:hover {
+      background-color: #333;
+      color: white;
       }
       .schedulebutton {
         background-color: #333;
@@ -99,14 +105,12 @@
   </head>
   <body>
     <nav aria-label="Main Navigation">
-      <a class="menu" href="/index.html">Home</a>
-      <a class="menu" href="/company/services.html">Services</a>
-      <a class="menu" href="/company/hours.html">Hours</a>
-      <a class="menu" href="/company/about.html">About Us</a>
-      <a class="menu" href="mailto:scheduling@fisherslocks.com"
-        >Schedule an Appointment</a
-      >
-      <a class="menu" href="/company/contact.html">Contact Us</a>
+    <a class="nav-button" href="/index.html">Home</a>
+    <a class="nav-button" href="/company/services.html">Services</a>
+    <a class="nav-button" href="/company/hours.html">Hours</a>
+    <a class="nav-button" href="/company/about.html">About Us</a>
+    <a class="nav-button" href="mailto:scheduling@fisherslocks.com">Schedule an Appointment</a>
+    <a class="nav-button" href="/company/contact.html">Contact Us</a>
     </nav>
 
     <div class="container">
