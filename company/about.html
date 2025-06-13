@@ -8,95 +8,80 @@
     <meta name="robots" content="index, follow">
     <title>Fisher's Locks About Us</title>
     <link rel="icon" type="image/png" href="/images/logo.png" />
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #c7c7c7;
+      }
+      nav {
+        background-color: #333;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      a.nav-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 25px;
+        height: 40px;
+        width: 160px;
+        font-weight: bold;
+        background-color: white;
+        border: 2px solid #333;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      a.nav-button:hover {
+        background-color: #333;
+        color: white;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      img {
+        width: 150px;
+        height: auto;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      font-family: "Times New Roman", Times, serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background-color: #c7c7c7;
-    }
-    nav {
-      background-color: #333;
-      padding: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .menu {
-      background-color: white;
-      border: 2px solid #333;
-      border-radius: 25px;
-      height: 40px;
-      width: 120px;
-      color: #333;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-    .menu:hover {
-      background-color: #333;
-      color: white;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-    }
-
-    img {
-      width: 150px;
-      height: auto;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 50px;
-    }
-  </style>
   <body>
-    <nav>
-      <button class="menu" onclick="location.href='/index.html';">Home</button>
-      <button class="menu" onclick="location.href='/company/services.html';">
-        Services
-      </button>
-      <button class="menu" onclick="location.href='/company/hours.html';">
-        Hours
-      </button>
-      <button class="menu" onclick="location.href='/company/about.html';">
-        About Us
-      </button>
-      <button
-        class="menu"
-        onclick="window.location.href='mailto:scheduling@fisherslocks.com';"
-      >
-        Schedule an Appointment
-      </button>
-    </button>
-    <button class="menu" onclick="location.href='/company/contact.html';">
-      Contact Us
-    </button>
+    <nav aria-label="Main Navigation">
+      <a class="nav-button" href="/index.html">Home</a>
+      <a class="nav-button" href="/company/services.html">Services</a>
+      <a class="nav-button" href="/company/hours.html">Hours</a>
+      <a class="nav-button" href="/company/about.html">About Us</a>
+      <a class="nav-button" href="mailto:scheduling@fisherslocks.com">Schedule an Appointment</a>
+      <a class="nav-button" href="/company/contact.html">Contact Us</a>
     </nav>
     <h1>About Us</h1>
     <p>Fisher's Locks is a small business located in Upstate New York. Fisher's Locks has been in business since 2023.</p>
-    
+
     <h2>Our Mission</h2>
     <p>To secure what matters most with skilled, honest, and dependable locksmith services.</p>
 
     <h2>Service Areas</h2>
     <p>Warren, Washington, parts of Essex and Saratoga Counties (NY), plus Bennington and Rutland Counties (VT).</p>
--
+
     <footer>
       <h4>Mon-Fri 8 AM-4 PM | Sat-Sun Closed</h4>
       <h4>CLOSED ALL MAJOR HOLIDAYS</h4>
