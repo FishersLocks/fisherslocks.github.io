@@ -14,7 +14,7 @@
         margin: 0;
         padding: 0;
         text-align: center;
-        background-color: #c7c7c7;
+        background-color: #eae8e9;
       }
       nav {
         background-color: #333;
@@ -43,6 +43,22 @@
         background-color: #333;
         color: white;
       }
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+      }
       footer {
         background-color: #333;
         color: white;
@@ -62,7 +78,9 @@
       <a class="nav-button" href="/company/contact.html">Contact Us</a>
     </nav>
 
-    <h1>Fisher's Locks Business Hours</h1>
+    <h1 class="visually-hidden">Fisher's Locks | Locksmith Business Hours in Granville NY</h1>
+    <h2 style="font-size: 50px;">Business Hours</h2>
+    <div class="container">
     <p>Monday: 8-4</p>
     <p>Tuesday: 8-4</p>
     <p>Wednesday: 8-4</p>
@@ -70,6 +88,7 @@
     <p>Friday: 8-4</p>
     <p>Sat & Sunday: Closed</p>
     <p>Major Holidays: Closed</p>
+    </div>
     <p>
       Emergency Calls will be accepted on a case by case basis. All Emergency
       calls are subject to higher fees and calls on weekends or holidays will be
